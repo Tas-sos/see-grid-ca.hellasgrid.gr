@@ -1,8 +1,9 @@
 ---
+id: about
 title: SEE-GRID CA
 date: 2015-05-15T12:50:00+02:00
-aliases:
-    - /about.html
+sidebar_label: About
+slug: /about
 ---
 
 
@@ -20,23 +21,15 @@ Since May 2010, SEE-GRID CA provides Catch-All PKI services for the European Gri
 
 The current version of the SEE-GRID CA CP/CPS is version 2.4.
 
-* [SEE-GRID CA CP/CPS v3.0][cps30]
-* [SEE-GRID CA CP/CPS v2.4][cps24] _(Superseded by v3.0)_
-* [SEE-GRID CA CP/CPS v2.3][cps23] _(Superseded by v2.4)_
-* [SEE-GRID CA CP/CPS v2.2][cps22] _(Superseded by v2.3)_
-* [SEE-GRID CA CP/CPS v2.1][cps21] _(Superseded by v2.2)_
-* [SEE-GRID CA CP/CPS v2.0][cps20] _(Superseded by v2.1)_
-* [SEE-GRID CA CP/CPS v1.1][cps11] _(Superseded by v2.0)_
-* [SEE-GRID CA CP/CPS v1.0][cps10] _(Superseded by v1.1)_
+* [SEE-GRID CA CP/CPS v3.0](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-3.0.pdf)
+* [SEE-GRID CA CP/CPS v2.4](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-2.4.pdf) _(Superseded by v3.0)_
+* [SEE-GRID CA CP/CPS v2.3](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-2.3.pdf) _(Superseded by v2.4)_
+* [SEE-GRID CA CP/CPS v2.2](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-2.2.pdf) _(Superseded by v2.3)_
+* [SEE-GRID CA CP/CPS v2.1](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-2.1.pdf) _(Superseded by v2.2)_
+* [SEE-GRID CA CP/CPS v2.0](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-2.0.pdf) _(Superseded by v2.1)_
+* [SEE-GRID CA CP/CPS v1.1](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-1.1.pdf) _(Superseded by v2.0)_
+* [SEE-GRID CA CP/CPS v1.0](https://snf-16528.ok-kno.grnetcloud.net/assets/SEE-GRID-CA-CP-CPS-1.0.pdf) _(Superseded by v1.1)_
 
-[cps30]: /assets/SEE-GRID-CA-CP-CPS-3.0.pdf
-[cps24]: /assets/SEE-GRID-CA-CP-CPS-2.4.pdf
-[cps23]: /assets/SEE-GRID-CA-CP-CPS-2.3.pdf
-[cps22]: /assets/SEE-GRID-CA-CP-CPS-2.2.pdf
-[cps21]: /assets/SEE-GRID-CA-CP-CPS-2.1.pdf
-[cps20]: /assets/SEE-GRID-CA-CP-CPS-2.0.pdf
-[cps11]: /assets/SEE-GRID-CA-CP-CPS-1.1.pdf
-[cps10]: /assets/SEE-GRID-CA-CP-CPS-1.0.pdf
 
 ## Trust Anchors
 
@@ -46,17 +39,14 @@ The CA certificate and CRLs are needed in order to correctly verify the validity
 
 ### SEE-GRID CA
 
-Below you can find information about the new SEE-GRID CA signing certificate that is in effect since 1/1/2014. The information about the previous signing certificate, which was in effect until 31/12/2013, has been [archived]
+Below you can find information about the new SEE-GRID CA signing certificate that is in effect since 1/1/2014. The information about the previous signing certificate, which was in effect until 31/12/2013, has been [archived](archive_see-grid-ca-2004-2013.md)
 
-[archived]: /see-grid-ca-2004-2013.html
 
 #### Certificate & CRL
 
-* [SEE-GRID CA certificate in PEM format][cert-pem]
-* [SEE-GRID CA CRL in PEM format][crl-pem]
+* [SEE-GRID CA certificate in PEM format](http://crl.hellasgrid.gr/seegrid-ca-2013/cert.pem)
+* [SEE-GRID CA CRL in PEM format](http://crl.hellasgrid.gr/seegrid-ca-2013/crl-v2.pem)
 
-[cert-pem]: http://crl.hellasgrid.gr/seegrid-ca-2013/cert.pem
-[crl-pem]: http://crl.hellasgrid.gr/seegrid-ca-2013/crl-v2.pem
 
 #### Fingerprint & hashes
 

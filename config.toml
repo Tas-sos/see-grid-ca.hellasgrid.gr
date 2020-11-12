@@ -1,7 +1,0 @@
-languageCode = "en-us"
-title = "SEE-GRID Certification Authority"
-baseurl = "http://see-grid-ca.hellasgrid.gr/"
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-builddrafts = false

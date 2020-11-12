@@ -9,3 +9,10 @@ vendor
 *.pxm
 Rakefile
 *~
+
+# Docusaurus 2
+website/.docusaurus/
+website/node_modules/
+website/blog/
+website/build/
+
