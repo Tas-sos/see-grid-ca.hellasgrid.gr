@@ -5,8 +5,6 @@ pipeline {
     }
     environment {
         PROJECT_DIR = 'see-grid-ca.hellasgrid.gr'
-        GH_USER = 'newgrnetci'
-        GH_EMAIL = '<argo@grnet.gr>'
     }
     stages {
         stage ('Deploy Docs') {
@@ -24,18 +22,15 @@ pipeline {
             steps {
                 echo 'Publish see-grid-ca.hellasgrid.gr docs...'
                 sh '''
-                    cd $WORKSPACE/$PROJECT_DIR
-                    cd website
+                    cd $WORKSPACE/$PROJECT_DIR/website
                     npm install
+                    npm run build
                 '''
-                sshagent (credentials: ['jenkins-master']) {
+                sshagent (credentials: ['newgrnetci-devel']) {
                     sh '''
                         cd $WORKSPACE/$PROJECT_DIR/website
-                        mkdir ~/.ssh && ssh-keyscan -H github.com > ~/.ssh/known_hosts
-                        git config --global user.email ${GH_EMAIL}
-                        git config --global user.name ${GH_USER}
-                        GIT_USER=${GH_USER} USE_SSH=true npm run deploy
-                        GIT_USER=${GH_USER} USE_SSH=true scp -fr build/* productionVM:/var/www/see-grid-ca.hellasgrid.gr/
+                        mkdir ~/.ssh && ssh-keyscan -H see-grid-ca.hellasgrid.gr > ~/.ssh/known_hosts
+                        scp -fr build/* see-grid-ca.hellasgrid.gr:/var/www/see-grid-ca.hellasgrid.gr/
                     '''
                 }
             }
